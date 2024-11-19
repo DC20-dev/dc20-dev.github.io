@@ -18,19 +18,10 @@
 <body>
   <header class="page-header" role="banner">
     <div class="header-content">
-      <div class="no-interaction">
-        <div class="img-content">
-          <img src="/assets/images/Headshot.jpg" alt="Me">
-        </div>
-        <div class="text-content">
-          <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-          <h2 class="project-tagline">{{ page.description | default: site.description |
-            default:site.github.project_tagline}}</h2>
-        </div>
-      </div>
-      <div class="buttons">
-        <a href="https://drive.google.com/uc?export=download&id=1Xn6mWd4Rk0meuvjJ12yN2GhEFdXeQ-fP"
-          class="btn">Resume</a>
+      <div class="text-content">
+        <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+        <h2 class="project-tagline">{{ page.description | default: site.description |
+          default:site.github.project_tagline}}</h2>
       </div>
     </div>
   </header>
@@ -47,7 +38,6 @@
           Pages</a>.</span>
     </footer>
   </main>
-</body>
 </body>
 
 </html>

@@ -65,18 +65,18 @@ a {
   display: inline-block;
   margin-bottom: 1rem;
   color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
+  background-color: #ffffff14;
+  border-color: #80CBC4;
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 
   &:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: #ffffffcc;
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
+    background-color: #80CBC4;
+    border-color: #ffffff14;
   }
 
   + .btn {
@@ -107,21 +107,64 @@ a {
 
 .page-header {
   color: $header-heading-color;
-  text-align: center;
   background-color: $header-bg-color;
-  //background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
 
-  @include large {
-    padding: 5rem 6rem;
-  }
+  position: sticky;
+  top: 0;
+  width: auto;
+  z-index: 1000;
 
-  @include medium {
-    padding: 3rem 4rem;
-  }
+  // @include small {
+  //   position: relative;
+  // }
+}
+
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @include small {
-    padding: 2rem 1rem;
+    flex-direction: column;
   }
+}
+
+.no-interaction {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text-content {
+  padding: 10px;
+  align-self: center;
+}
+.text-content h1 {
+  margin: 0;
+}
+.text-content h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.img-content img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    object-fit: contain;
+    padding: 10px;
+
+    position: sticky;
+
+    @include small {
+      height: 100px;
+      width: 100px;
+    }
+}
+
+.buttons {
+  align-self: center;
 }
 
 .project-name {
