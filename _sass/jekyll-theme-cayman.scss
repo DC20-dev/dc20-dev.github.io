@@ -106,35 +106,14 @@ a {
   }
 }
 
-.page-header {
-  color: $header-heading-color;
-  background-color: $header-bg-color;
+// My Image + Name
 
-  position: sticky;
-  top: 0;
-  width: auto;
-  z-index: 1000;
-
-  // @include small {
-  //   position: relative;
-  // }
-}
-
-
-.header-content {
+.base-info {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  @include small {
-    flex-direction: column;
-  }
-}
-
-.no-interaction {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  background-color: $header-bg-color;
+  color: $header-heading-color;
 }
 
 .text-content {
@@ -150,23 +129,65 @@ a {
 }
 
 .img-content img {
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    object-fit: contain;
-    padding: 10px;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  object-fit: contain;
+  padding: 10px;
 
-    position: sticky;
+  @include small {
+    height: 100px;
+    width: 100px;
+  }
+}
 
-    @include small {
-      height: 100px;
-      width: 100px;
-    }
+// Sticky Header
+
+.container {
+  position: sticky;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  top: 0;
+  margin: 0 auto;
+
+
+  @include large {
+    max-width: 60rem;
+  }
+}
+
+.page-header {
+  color: $header-heading-color;
+  background-color: $header-bg-color;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.page-header h1 {
+  opacity: 0; // set to 0 at the beginning to avoid popping
+  justify-self: left;
+  margin: 10px;
+
+  @include large {
+    font-size: 2rem;
+  }
+
+  @include medium {
+    font-size: 1.5rem;
+  }
+
+  @include small {
+    font-size: 1.2rem;
+  }
 }
 
 .buttons {
-  align-self: center;
+  margin: 10px;
 }
+
+// other
 
 .project-name {
   margin-top: 0;

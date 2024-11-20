@@ -1,5 +1,6 @@
 ---
 layout: default
+resume_link: https://drive.google.com/uc?export=download&id=1Xn6mWd4Rk0meuvjJ12yN2GhEFdXeQ-fP
 ---
 
 # About Me
