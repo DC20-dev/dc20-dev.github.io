@@ -1,11 +1,9 @@
 ---
-layout: default
+layout: projects
 title: STEAMRUSH
-description: Fully Published Videogame
+description: Steamrush subtitle
+link: https://store.steampowered.com/app/2647100/STEAMRUSH/
 ---
-
-# <a class="icon-link" href=".."><i class="fi fi-sr-arrow-small-left"></i></a>
-
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
