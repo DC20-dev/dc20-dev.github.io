@@ -1,6 +1,10 @@
 ---
 layout: default
-resume_link: https://drive.google.com/uc?export=download&id=1Xn6mWd4Rk0meuvjJ12yN2GhEFdXeQ-fP
+resume-link: https://drive.google.com/uc?export=download&id=1Xn6mWd4Rk0meuvjJ12yN2GhEFdXeQ-fP
+linkedin-link: https://www.linkedin.com/in/daniel-corrieri
+gmail-link: mailto:danielcorrieri@gmail.com
+github-link: https://github.com/DC20-dev
+discord-link: https://discordapp.com/users/380084195210297354
 ---
 
 # About Me
