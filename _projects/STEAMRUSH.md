@@ -1,23 +1,11 @@
 ---
 layout: default
-image: /assets/images/Headshot.jpg
+title: STEAMRUSH
+description: Fully Published Videogame
 ---
 
-# About Me
+# <a class="icon-link" href=".."><i class="fi fi-sr-arrow-small-left"></i></a>
 
-I’m a game developer passionate about creating immersive experiences. I love diving into every aspect of game development, from coding to gameplay mechanics, and constantly experimenting with new ideas to bring games to life.
-
-# Projects
-
-{% for project in site.projects %}
-
-  <h3>
-    <a href="{{ project.url }}">
-      {{ project.title }}
-    </a>
-  </h3>
-
-{% endfor %}
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
