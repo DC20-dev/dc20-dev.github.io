@@ -3,8 +3,7 @@ layout: default
 image: /assets/images/Headshot.jpg
 ---
 
-> [!IMPORTANT]
-> The website is still a Work in Progress!
+# 🏗️ The website is still a Work in Progress! 🏗️
 
 # About Me
 
