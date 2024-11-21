@@ -11,19 +11,22 @@ I’m a game developer passionate about creating immersive experiences. I love d
 
 # Projects
 
+<div class="card-container">
 {% for project in site.projects %}
-
-  <h3>
-    <a href="{{ project.url }}">
-      {{ project.title }}
+  <div class="card">
+    <a href="{{ project.url }}" style="text-decoration: none !important">
+      <img src="{{ project.preview }}" onerror="this.style.display='none'">
+      <div class="card-info"><p>{{ project.title }}</p><p>{{ project.description }}</p></div>
     </a>
-  </h3>
+  </div>
 
 {% endfor %}
+</div>
+
+
+# Filler Text
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
-
-[Link to another page](./another-page.html).
 
 There should be whitespace between paragraphs.
 

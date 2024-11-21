@@ -1,13 +1,13 @@
 ---
 layout: projects
 title: STEAMRUSH
-description: Steamrush subtitle
+description: third-person boss rush game
 link: https://store.steampowered.com/app/2647100/STEAMRUSH/
+image: /assets/images/STEAMRUSH/STEAMRUSH.ico
+preview: https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2647100/header.jpg?t=1708539139
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
-
-[Link to another page](./another-page.html).
 
 There should be whitespace between paragraphs.
 
