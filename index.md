@@ -3,6 +3,9 @@ layout: default
 image: /assets/images/Headshot.jpg
 ---
 
+> [!IMPORTANT]
+> The website is still a Work in Progress!
+
 # About Me
 
 I’m a game developer passionate about creating immersive experiences. I love diving into every aspect of game development, from coding to gameplay mechanics, and constantly experimenting with new ideas to bring games to life.
