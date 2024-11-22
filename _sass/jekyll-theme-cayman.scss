@@ -295,7 +295,7 @@ iconify-icon {
     overflow: hidden;
   
     border-radius: 2% / 10%;
-    background-color: lighten($color: $secondary-bg, $amount: 10);
+    background-color: $tertiary-bg;
     width: 100%;
     height: 23%;
     transition: background-color 0.2s;

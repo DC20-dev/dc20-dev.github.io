@@ -3,13 +3,14 @@ $large-breakpoint: 64em !default;
 $medium-breakpoint: 42em !default;
 
 // neutral
-$main-bg: #111111 !default;
-$secondary-bg: lighten($color: $main-bg, $amount: 5%);
+$main-bg: var(--primary-bg) !default;
+$secondary-bg: var(--secondary-bg) !default;
+$tertiary-bg: var(--tertiary-bg) !default;
 
 // Accents
 $primary-accent: var(--primary-accent) !default;
-$text-accent: var(--text-accent) !default;
 $secondary-accent: var(--secondary-accent) !default;
+$text-accent: var(--tertiary-accent) !default;
 
 // ----------------------------
 
@@ -26,5 +27,9 @@ $hr-border-color: $primary-accent !default;
 :root {
     --primary-accent: #B8A2D1;
     --secondary-accent: #80CBC4;
-    --text-accent: #D6C7B8;
+    --tertiary-accent: #D6C7B8;
+    
+    --primary-bg: #111111;
+    --secondary-bg: #1e1e1e;
+    --tertiary-bg: #393939;
 }
