@@ -3,7 +3,6 @@ description: Game Developer
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-cayman
-markdown: redcarpet
 
 # Collections
 collections:
