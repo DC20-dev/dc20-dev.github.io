@@ -57,7 +57,7 @@ a {
   color: $body-link-color;
   text-decoration: none;
 
-  &:hover &:active {
+  &:hover {
     text-decoration: underline;
   }
 }
@@ -72,7 +72,7 @@ a {
   border-radius: 0.5rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 
-  &:hover &:active {
+  &:hover {
     color: #ffffffcc;
     text-decoration: none;
     background-color: #80CBC4;
@@ -126,7 +126,7 @@ a {
 
   }
 
-  &:hover &:active {
+  &:hover {
     color: $body-link-color;
   }
 }
@@ -246,7 +246,7 @@ a {
   border-style: solid;
   overflow: hidden;
 
-  &:hover &:active {
+  &:hover {
     border-width: 1px;
     border-color: $body-link-color;
   }
@@ -264,7 +264,7 @@ a {
   transition: all .2s;
   filter: grayscale(40%);
 
-  &:hover &:active {
+  &:hover {
     filter: grayscale(0%);
   }
 }
@@ -279,7 +279,7 @@ a {
 .card a {
   color: $header-heading-color;
 
-  &:hover &:active {
+  &:hover {
     color: $body-link-color;
   }
 }
