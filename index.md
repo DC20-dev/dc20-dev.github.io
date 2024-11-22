@@ -16,7 +16,7 @@ I’m a game developer passionate about creating immersive experiences. I love d
   <div class="card">
     <a href="{{ project.url }}" style="text-decoration: none !important">
       <img src="{{ project.preview }}" alt="" onerror="this.style.display='none'">
-      <div class="card-info"><p>{{ project.title }}</p><p>{{ project.description }}</p></div>
+      <div class="card-info"><p class="card-title">{{ project.title }}</p><p class="card-text">{{ project.preview-icons }}</p></div>
     </a>
   </div>
 

@@ -31,8 +31,8 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: $body-text-color;
-  background: $body-bg-color;
+  color: $text-accent;
+  background: $main-bg;
 }
 
 #skip-to-content {
@@ -48,13 +48,13 @@ body {
     left: 10px;
     height: auto;
     width: auto;
-    background: invert($body-link-color);
-    outline: thick solid invert($body-link-color);
+    background: invert($secondary-accent);
+    outline: thick solid invert($secondary-accent);
   }
 }
 
 a {
-  color: $body-link-color;
+  color: $secondary-accent;
   text-decoration: none;
 
   &:hover, &:active {
@@ -66,7 +66,7 @@ a {
   display: inline-block;
   color: rgba(255, 255, 255, 0.7);
   background-color: #ffffff14;
-  border-color: $body-link-color;
+  border-color: $secondary-accent;
   border-style: solid;
   border-width: 1px;
   border-radius: 0.5rem;
@@ -105,6 +105,14 @@ a {
   }
 }
 
+// icon links
+
+iconify-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
 .icon-link {
   display: inline;
   text-decoration: none !important;
@@ -127,7 +135,7 @@ a {
   }
 
   &:hover, &:active {
-    color: $body-link-color;
+    color: $secondary-accent;
   }
 }
 
@@ -137,8 +145,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $header-bg-color;
-  color: $header-heading-color;
+  background-color: $secondary-bg;
+  color: $primary-accent;
 }
 
 .text-content {
@@ -187,8 +195,8 @@ a {
 }
 
 .page-header {
-  color: $header-heading-color;
-  background-color: $header-bg-color;
+  color: $primary-accent;
+  background-color: $secondary-bg;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -214,7 +222,7 @@ a {
 
 .buttons {
   margin: 10px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 10px;
 }
@@ -236,59 +244,78 @@ a {
   margin-bottom: 10px;
   padding: 10px;
   
-  background-color: $header-bg-color;
+  background-color: $secondary-bg;
   color: inherit;
-  transition: color 0.2s;
+  transition: color 0.2s, background-color 0.2s;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   border-radius: 5%;
 
-  border-width: 0px;
-  border-style: solid;
   overflow: hidden;
 
+  img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    justify-self: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 2% / 5%;
+  
+    transition: all .2s;
+    filter: grayscale(40%);
+  }
+
+  .card-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    overflow: hidden;
+  
+    border-radius: 2% / 10%;
+    background-color: lighten($color: $secondary-bg, $amount: 10);
+    width: 100%;
+    height: 23%;
+    transition: background-color 0.2s;
+
+    .card-title {
+      display: inline;
+      font-size: x-large;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin: 10px;
+    }
+
+    .card-text {
+      display: inline;
+      font-size: x-large;
+      margin: 10px;
+    }
+  }
+
+  a {
+    color: $primary-accent;
+  }
+
   &:hover, &:active {
-    border-width: 1px;
-    border-color: $body-link-color;
+    background-color: color-mix(in srgb, $secondary-bg 60%, $secondary-accent 40%);
+
+    img {
+      filter: grayscale(0%);
+    }
+
+    .card-info {
+    background-color: $secondary-bg;
+    }
   }
 }
 
-.card img {
-  width: 400px;
-  height: 200px;
-  object-fit: cover;
-  justify-self: center;
-  background-position: center center;
-  background-repeat: no-repeat;
-  border-radius: 2% / 5%;
-
-  transition: all .2s;
-  filter: grayscale(40%);
-
-  &:hover, &:active {
-    filter: grayscale(0%);
-  }
-}
-
-.card-info {
-  display: block;
-  font-size: large;
-  justify-self: center;
-  justify-items: center;
-}
-
-.card a {
-  color: $header-heading-color;
-
-  &:hover, &:active {
-    color: $body-link-color;
-  }
-}
 
 // other
 
 .project-name {
   margin-top: 0;
   margin-bottom: 0.1rem;
+
 
   @include large {
     font-size: 3.25rem;
@@ -372,7 +399,7 @@ a {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
-    color: $section-headings-color;
+    color: $primary-accent;
   }
 
   p {

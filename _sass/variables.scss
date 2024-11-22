@@ -2,21 +2,19 @@
 $large-breakpoint: 64em !default;
 $medium-breakpoint: 42em !default;
 
-// Body
-$body-bg-color: #111111 !default;
+// neutral
+$main-bg: #111111 !default;
+$secondary-bg: #212425 !default;
 
-// Headers
-$header-heading-color: #B8A2D1 !default;
-$header-bg-color: #212425 !default;
-$header-bg-color-secondary: #155799 !default;
+// Accents
+$primary-accent: #B8A2D1 !default;
+$text-accent: #D6C7B8 !default;
+$secondary-accent: #80CBC4 !default;
 
-// Text
-$section-headings-color: #B8A2D1 !default;
-$body-text-color: #D6C7B8 !default;
-$body-link-color: #80CBC4 !default;
-$blockquote-text-color: #819198 !default;
+// ----------------------------
 
 // Code
+$blockquote-text-color: #819198 !default;
 $code-bg-color: #1d1f21 !default;
 $code-text-color: #567482 !default;
 
