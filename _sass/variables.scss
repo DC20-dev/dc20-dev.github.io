@@ -3,8 +3,8 @@ $large-breakpoint: 64em !default;
 $medium-breakpoint: 42em !default;
 
 // neutral
-$main-bg: #111111 !default;
-$secondary-bg: lighten($color: $main-bg, $amount: 5%);
+$main-bg: var(--main-bg) !default;
+$secondary-bg: var(--secondary-bg);
 
 // Accents
 $primary-accent: var(--primary-accent) !default;
@@ -24,6 +24,8 @@ $table-border-color: #e9ebec !default;
 $hr-border-color: $primary-accent !default;
 
 :root {
+    --main-bg: #111111;
+    --secondary-bg: lighten($color: var(--main-bg), $amount: 5%)
     --primary-accent: #B8A2D1;
     --secondary-accent: #80CBC4;
     --text-accent: #D6C7B8;
