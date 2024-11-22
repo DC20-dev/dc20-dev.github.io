@@ -29,7 +29,11 @@
   </div>
   <header class="page-header" role="banner">
     <div class="container">
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+      <div class="img-content-header">
+        <img src="{{ page.image }}" alt="" onerror="this.style.display='none'">
+      </div>
+      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}
+      </h1>
       <div class="buttons">
         <a class="icon-link" href="{{ site.info.linkedin-link }}" target="_blank"><iconify-icon icon="mdi:linkedin"></iconify-icon></a>
         <a class="icon-link" href="{{ site.info.github-link }}" target="_blank"><iconify-icon icon="mdi:github"></iconify-icon></a>

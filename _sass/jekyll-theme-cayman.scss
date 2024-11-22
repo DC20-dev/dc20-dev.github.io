@@ -3,6 +3,8 @@
 @import "variables";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
+// SORRY, I KNOW IT'S A MESS... :(
+
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
     @content;
@@ -111,6 +113,7 @@ iconify-icon {
   display: inline-block;
   width: 1em;
   height: 1em;
+  transform: translateY(10%); // centering the fonts to the text level
 }
 
 .icon-link {
@@ -183,7 +186,7 @@ iconify-icon {
 .container {
   position: sticky;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   display: flex;
   top: 0;
   margin: 0 auto;
@@ -200,6 +203,25 @@ iconify-icon {
   position: sticky;
   top: 0;
   z-index: 1000;
+
+  box-shadow: 0 6px 6px rgba(0,0,0,0.23);
+
+  .img-content-header img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    justify-self: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    transform: translateY(5%);
+  
+    @include small {
+      height: 60px;
+      width: 60px;
+    }
+  }
 }
 
 .page-header h1 {

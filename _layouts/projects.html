@@ -32,6 +32,9 @@
   <header class="page-header" role="banner">
     <div class="container">
       <a class="icon-link" href=".."><iconify-icon icon="mdi:arrow-back-circle"></iconify-icon></a>
+      <div class="img-content-header">
+        <img src="{{ page.image }}" alt="" onerror="this.style.display='none'">
+      </div>
       <h1 class="project-name">{% if page.link %} <a class= "icon-link" target="_blank" href="{{ page.link }}"> 
         {% endif %} {{ page.title | default: site.title | default: site.github.repository_name }}{% if page.link %} 
       </a> {% endif %}</h1>

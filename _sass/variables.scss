@@ -4,12 +4,12 @@ $medium-breakpoint: 42em !default;
 
 // neutral
 $main-bg: #111111 !default;
-$secondary-bg: #212425 !default;
+$secondary-bg: lighten($color: $main-bg, $amount: 5%);
 
 // Accents
-$primary-accent: #B8A2D1 !default;
-$text-accent: #D6C7B8 !default;
-$secondary-accent: #80CBC4 !default;
+$primary-accent: var(--primary-accent) !default;
+$text-accent: var(--text-accent) !default;
+$secondary-accent: var(--secondary-accent) !default;
 
 // ----------------------------
 
@@ -21,4 +21,10 @@ $code-text-color: #567482 !default;
 // Borders
 $border-color: #dce6f0 !default;
 $table-border-color: #e9ebec !default;
-$hr-border-color: #B8A2D1 !default;
+$hr-border-color: $primary-accent !default;
+
+:root {
+    --primary-accent: #B8A2D1;
+    --secondary-accent: #80CBC4;
+    --text-accent: #D6C7B8;
+}
