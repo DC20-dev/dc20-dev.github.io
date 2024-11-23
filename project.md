@@ -15,8 +15,4 @@ secondary:
 tertiary: 
 ---
 
-<script>
-  document.documentElement.style.setProperty('--primary-accent', "{{ page.primary }}");
-  document.documentElement.style.setProperty('--secondary-accent',"{{ page.secondary }}");
-  document.documentElement.style.setProperty('--tertiary-accent', "{{ page.tertiary }}");
-</script>
+{% include colorizer.html primary=page.primary secondary=page.secondary tertiary=page.tertiary %}

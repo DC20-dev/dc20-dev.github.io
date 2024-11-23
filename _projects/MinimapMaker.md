@@ -16,10 +16,6 @@ tertiary: "#ebfff9"
 driveId: 1LpWrmge29oLtak2RXaC88svxFcIxd4nX/preview
 ---
 
-<script>
-  document.documentElement.style.setProperty('--primary-accent', "{{ page.primary }}");
-  document.documentElement.style.setProperty('--secondary-accent',"{{ page.secondary }}");
-  document.documentElement.style.setProperty('--tertiary-accent', "{{ page.tertiary }}");
-</script>
+{% include colorizer.html primary=page.primary secondary=page.secondary tertiary=page.tertiary %}
 
 {% include googleDrivePlayer.html id=page.driveId %}

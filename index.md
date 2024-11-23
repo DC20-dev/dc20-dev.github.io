@@ -8,11 +8,8 @@ secondary: "#959270"
 tertiary: "#ede0db"
 ---
 
-<script>
-  document.documentElement.style.setProperty('--primary-accent', "{{ page.primary }}");
-  document.documentElement.style.setProperty('--secondary-accent',"{{ page.secondary }}");
-  document.documentElement.style.setProperty('--tertiary-accent', "{{ page.tertiary }}");
-</script>
+{% include colorizer.html primary=page.primary secondary=page.secondary tertiary=page.tertiary %}
+
 
 # 🏗️ The website is still a Work in Progress! 🏗️
 
