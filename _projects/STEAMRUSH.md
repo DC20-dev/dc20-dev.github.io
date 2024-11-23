@@ -12,6 +12,7 @@ preview-icons: <iconify-icon icon="mdi:hot"></iconify-icon> <iconify-icon icon="
 primary: "#ED6D1D"
 secondary: "#ffbab1"
 tertiary: "#f5ded4"
+youtubeId: ZHLuOokWeKg
 ---
 
 <script>
@@ -19,3 +20,5 @@ tertiary: "#f5ded4"
   document.documentElement.style.setProperty('--secondary-accent',"{{ page.secondary }}");
   document.documentElement.style.setProperty('--tertiary-accent', "{{ page.tertiary }}");
 </script>
+
+{% include youtubePlayer.html id=page.youtubeId %}
