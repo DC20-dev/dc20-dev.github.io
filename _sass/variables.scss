@@ -14,15 +14,13 @@ $text-accent: var(--tertiary-accent) !default;
 
 // ----------------------------
 
-// Code
-$blockquote-text-color: #819198 !default;
-$code-bg-color: #1d1f21 !default;
-$code-text-color: #567482 !default;
+// Quote
+$blockquote-text-color: var(--tertiary-accent) !default;
 
 // Borders
-$border-color: #dce6f0 !default;
-$table-border-color: #e9ebec !default;
-$hr-border-color: $primary-accent !default;
+$border-color: var(--primary-accent) !default;
+$table-border-color: var(--primary-accent) !default;
+$hr-border-color: var(--primary-accent) !default;
 
 :root {
     --primary-accent: #B8A2D1;
@@ -33,3 +31,23 @@ $hr-border-color: $primary-accent !default;
     --secondary-bg: #1e1e1e;
     --tertiary-bg: #393939;
 }
+
+// sizes 
+
+@mixin large {
+    @media screen and (min-width: #{$large-breakpoint}) {
+      @content;
+    }
+  }
+  
+  @mixin medium {
+    @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
+      @content;
+    }
+  }
+  
+  @mixin small {
+    @media screen and (max-width: #{$medium-breakpoint}) {
+      @content;
+    }
+  }
