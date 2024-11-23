@@ -3,9 +3,9 @@ $large-breakpoint: 64em !default;
 $medium-breakpoint: 42em !default;
 
 // neutral
-$main-bg: var(--primary-bg) !default;
-$secondary-bg: var(--secondary-bg) !default;
-$tertiary-bg: var(--tertiary-bg) !default;
+$main-bg: color-mix(in srgb, var(--primary-bg) 98%, var(--primary-accent) 2%)  !default;
+$secondary-bg: color-mix(in srgb, var(--secondary-bg) 98%, var(--primary-accent) 2%) !default;
+$tertiary-bg: color-mix(in srgb, var(--tertiary-bg) 98%, var(--primary-accent) 2%) !default;
 
 // Accents
 $primary-accent: var(--primary-accent) !default;
