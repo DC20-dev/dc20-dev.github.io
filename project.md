@@ -7,7 +7,7 @@ link:
 
 image: 
 preview: 
-preview-text: 
+preview-icons: 
 
 # https://material-foundation.github.io/material-theme-builder/ for the palette, just pass the relevant img!
 primary: 

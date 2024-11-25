@@ -15,10 +15,12 @@ tertiary: "#ede0db"
 
 # About Me
 
-I’m a game programmer passionate about creating immersive experiences. 
-I love diving into every aspect of game development, from coding to gameplay mechanics, and constantly experimenting with new ideas to bring games to life.
+Hi, I'm a game programmer who loves turning ideas into fun, interactive experiences.
+I enjoy diving into the details of gameplay, AI, and mechanics to make games that feel great to play.
+Problem-solving and learning new tech are what keep me excited, and I’m always up for a challenge.
+Whether it’s working solo or collaborating with a team, my goal is to create games that people can get lost in and enjoy.
 
-# Projects {% if site.projects.size > 6 + 1 %} <a class="icon-link" href="./projects/Projects.html"><iconify-icon icon="iconamoon:arrow-right-6-circle-fill"></iconify-icon></a> {% endif %}
+# Projects {% if site.projects.size > 7 %} <a class="icon-link" href="./projects/Projects.html"><iconify-icon icon="iconamoon:arrow-right-6-circle-fill"></iconify-icon></a> {% endif %}
 
 <div class="card-container"> 
 {% for project in site.projects limit:6 %}
@@ -35,7 +37,7 @@ I love diving into every aspect of game development, from coding to gameplay mec
 
 # My Technical Arsenal
 
-Here’s a quick look at all the areas I’ve dived into and the tools I’ve mastered along the way.
+Here’s a quick look at all the areas I’ve dived into and the tools I’ve used along the way.
 
 ### Programming Languages & Build Systems <iconify-icon icon="mdi:code-braces-box"></iconify-icon>
 

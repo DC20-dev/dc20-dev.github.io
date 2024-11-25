@@ -11,6 +11,9 @@ collections:
   projects:
     order:
       - STEAMRUSH.md
+      - MinimapMaker.md
+      - RayTracer.md
+      - Snake.md
     output: true
 
 # Site Info
