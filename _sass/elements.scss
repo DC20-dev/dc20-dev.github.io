@@ -230,6 +230,66 @@ iconify-icon {
   }
 }
 
+.github-section {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  border-radius: 20px;
+  font-size: xx-large;
+  overflow: hidden;
+
+  background-color: $tertiary-bg;
+  transition: background-color 0.2s;
+
+  
+  a {
+    position: relative;
+    width: 100%;
+
+    img {
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      transform: translateY(-50%);
+
+      width: 100%;
+      object-fit: cover;
+      filter: blur(20px);
+    }
+
+    .card-text {
+      width: 80%;
+      text-align: center;
+      position: absolute;
+      left: 10%;
+      top: 0%;
+      transform: translateY(-50%);
+      z-index: 1;
+      display: inline;
+
+      color: $primary-accent;
+      background-color: $tertiary-bg;
+      border-radius: 20px;
+      transition: color 0.2s;
+
+    }
+  }
+
+  &:hover,
+  &:active {
+    a {
+      .card-text {
+      color: $secondary-accent;
+      }
+    }
+    background-color: color-mix(in srgb, $secondary-bg 60%, $secondary-accent 40%);
+  }
+}
+
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;
