@@ -24,8 +24,7 @@
       <img src="{{ page.image }}" alt="" onerror="this.style.display='none'">
     </div>
     <div class="text-content">
-      <h1 class="project-name">{% if page.link %} <a class= "icon-link" target="_blank" href="{{ page.link }}"> 
-        {% endif %} {{ page.title | default: site.title | default: site.github.repository_name }}{% if page.link %} 
+      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}{% if page.link %} 
       </a> {% endif %}</h1>
       <h2 class="project-tagline">{{ page.description | default: none |
         default:site.github.project_tagline}}</h2>
@@ -37,8 +36,7 @@
       <div class="img-content-header">
         <img src="{{ page.image }}" alt="" onerror="this.style.display='none'">
       </div>
-      <h1 class="project-name">{% if page.link %} <a class= "icon-link" target="_blank" href="{{ page.link }}"> 
-        {% endif %} {{ page.title | default: site.title | default: site.github.repository_name }}{% if page.link %} 
+      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}{% if page.link %} 
       </a> {% endif %}</h1>
       <div class="buttons">
         <a class="icon-link" href="{{ site.info.linkedin-link }}" target="_blank"><iconify-icon icon="mdi:linkedin"></iconify-icon></a>
