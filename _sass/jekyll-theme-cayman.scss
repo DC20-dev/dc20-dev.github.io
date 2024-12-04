@@ -186,6 +186,11 @@ a {
     margin-bottom: 1em;
     font-style: normal;
     font-weight: 200;
+
+    code {
+      border-radius: 5px;
+      padding: .5%;
+    }
   }
 
   ul,
