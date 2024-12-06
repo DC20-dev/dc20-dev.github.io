@@ -160,7 +160,7 @@ This represents a **performance uplift** of approximately **41.5%**.  <iconify-i
 it turned out to be **much faster overall**. This change highlights the importance of **finding
 the right granularity** for parallelization in computationally intensive tasks like ray tracing.  
 
-> <iconify-icon icon="hugeicons:note" style="font-size: xx-large"></iconify-icon>
+{% include note.html %}
 > Technically, it would be possible to **avoid** using the `Mutex` for synchronizing access to the buffer,
 > as each pixel is written to a **preallocated** memory address in the buffer, and **no pixel will overlap with another**.
 > However, Rust **prioritizes safety**, and I opted to prioritize those safety guarantees over squeezing out a bit more performance.
