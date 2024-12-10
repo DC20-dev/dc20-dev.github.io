@@ -19,7 +19,7 @@ Whether it’s working solo or collaborating with a team, my goal is to create g
 
 # Projects {% if site.projects.size > 7 %} <a class="icon-link" href="./projects/Projects.html"><iconify-icon icon="iconamoon:arrow-right-6-circle-fill"></iconify-icon></a> {% endif %}
 
-Here are some of the projects I’ve worked on, each showcasing my passion for creativity, problem-solving, and learning new technologies.  
+Here’s a collection of projects I’ve enjoyed building, each with its own unique challenges and ideas.
 
 <div class="card-container"> 
 {% for project in site.projects limit:6 %}

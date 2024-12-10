@@ -17,7 +17,7 @@ tertiary: "#ede0db"
 
 {% include colorizer.html primary=page.primary secondary=page.secondary tertiary=page.tertiary %}
 
-Here are some of the projects I’ve worked on, each showcasing my passion for creativity, problem-solving, and learning new technologies.  
+Here’s a collection of projects I’ve enjoyed building, each with its own unique challenges and ideas.  
 
 <div class="card-container"> 
 {% for project in site.projects %}
