@@ -180,6 +180,11 @@ a {
     margin-bottom: 1rem;
     font-weight: normal;
     color: $primary-accent;
+
+    code {
+      border-radius: 5px;
+      padding: .5%;
+    }
   }
 
   p {
@@ -198,6 +203,11 @@ a {
     margin-top: 0;
     font-style: normal;
     font-weight: 200;
+
+    code {
+      border-radius: 5px;
+      padding: .5%;
+    }
   }
 
   blockquote {
