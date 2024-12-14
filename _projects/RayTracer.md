@@ -151,10 +151,10 @@ This adjustment ensured a more **even workload distribution** and **significantl
 * **Focus Distance**: 10m
 * **Defocus Angle**: 0.6
 
-**Sample Parallelization**: **7** minutes, **51** seconds  <iconify-icon icon="mdi:speedometer-slow" style="color: #FF0000; font-size: x-large"></iconify-icon>  
-**Pixel Parallelization**: **4** minutes, **35** seconds  <iconify-icon icon="mdi:speedometer" style="color: #00FF00; font-size: x-large"></iconify-icon>  
+**Sample Parallelization**: **1** minute, **20** seconds  <iconify-icon icon="mdi:speedometer-slow" style="color: #FF0000; font-size: x-large"></iconify-icon>  
+**Pixel Parallelization**: **40** seconds  <iconify-icon icon="mdi:speedometer" style="color: #00FF00; font-size: x-large"></iconify-icon>  
 
-This represents a **performance uplift** of approximately **41.5%**.  <iconify-icon icon="mdi:one-up" style="font-size: xx-large"></iconify-icon>  
+This represents a **performance uplift** of **50%**.  <iconify-icon icon="mdi:one-up" style="font-size: xx-large"></iconify-icon>  
 
 **Although** the pixel-parallel implementation **required** a `Mutex` to synchronize access to the shared image buffer,
 it turned out to be **much faster overall**. This change highlights the importance of **finding
